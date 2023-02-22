@@ -1,0 +1,74 @@
+.create-ride-container {
+  width: 100%;
+  padding: 56px 77px;
+  background: rgba(229, 237, 223, 0.06);
+  max-width: 878px;
+  min-height: 500px;
+  margin: auto;
+  position: relative;
+  border-radius: 16px;
+}
+
+.title {
+  font-size: 22px;
+  color: #E3E3DD;
+  margin-top: 24px;
+  text-align: center;
+  font-weight: bold;
+  margin-bottom: 8px;
+  margin-bottom: 12px;
+}
+
+.subtitle {
+  font-size: 16px;
+  text-align: center;
+  color: #E3E3DD;
+  opacity: 0.56;
+  margin-bottom: 48px;
+  border-radius: 16px;
+}
+
+.success-icon {
+  width: 96px;
+  height: 96px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+}
+
+.action-buttons {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.action-buttons .home-button {
+  background: #A8D486;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border: none;
+  width: 219px;
+  height: 48px;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #242A31;
+  margin-right: 16px;
+  font-weight: bold;
+}
+.action-buttons .add-new-button {
+  background: #86D2D4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-decoration: none;
+  border: none;
+  width: 219px;
+  height: 48px;
+  border-radius: 10px;
+  font-size: 18px;
+  color: #242A31;
+  margin-right: 16px;
+  font-weight: bold;
+}
+
+/*# sourceMappingURL=RideAddedModal.module.css.map */

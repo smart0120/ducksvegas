@@ -1,0 +1,60 @@
+.footer {
+  padding: 48px 64px 48px 64px;
+  background: #222626;
+  margin-top: 55px;
+  width: 100vw;
+  margin-left: -64px;
+}
+
+.title {
+  color: #E3E3DD;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.footer-content {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.sub-text {
+  font-size: 12px;
+  color: #E3E3DD;
+  opacity: 0.56;
+  margin-bottom: 30px;
+}
+
+.support {
+  margin-right: 72px;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+}
+
+.links {
+  display: flex;
+  align-items: flex-start;
+}
+.links a {
+  font-size: 14px;
+  color: #E3E3DD;
+  display: flex;
+  opacity: 0.56;
+  text-decoration: none;
+  margin-bottom: 15px;
+}
+.links a:hover {
+  color: #86D2D4;
+  text-decoration: underline;
+  opacity: 1;
+}
+
+/*# sourceMappingURL=RiderFooter.module.css.map */

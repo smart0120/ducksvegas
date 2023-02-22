@@ -1,0 +1,98 @@
+.wallet-adapter-container {
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.wallet-adapter-container .wallet-adapter-button {
+  width: 416px !important;
+  border: 2px solid #A8D486 !important;
+  border-radius: 12px !important;
+  background: none !important;
+  height: 72px;
+  margin-right: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+@media (max-width: 800px) {
+  .wallet-adapter-container .wallet-adapter-button {
+    max-width: 416px !important;
+    width: 90vw !important;
+    height: 64px;
+  }
+}
+.connected-wallet-box {
+  display: flex;
+  margin-right: 24px;
+  align-items: center;
+  justify-content: space-between;
+  background: #1B2129;
+  border-radius: 28px;
+  width: 216px;
+  height: 48px;
+  padding: 0px 21px 0px 6px;
+}
+
+.add-new-address-field {
+  height: 30px;
+  margin-top: 30px;
+  width: 350px;
+  background: #19212a;
+  border-radius: 46px;
+  border: 1px solid #3D4C54;
+  padding-left: 24px;
+  font-size: 14px;
+  outline: none;
+  color: #8698A2;
+  min-height: 46px;
+}
+
+.add-new-address-button {
+  background: none;
+  border: 1px #31cdc9 solid;
+  color: #31cdc9;
+  cursor: pointer;
+  border-radius: 46px;
+  width: 150px;
+  height: 46px;
+  margin: 30px auto 0px auto;
+}
+
+.wallet-adapter-input-field {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.add-new-address-button:hover {
+  background: #31cdc9;
+  color: white;
+  transition: 0.7s;
+}
+
+.wallet-adapter-on-mobile {
+  margin-bottom: 48px;
+  margin-top: 26px;
+  width: fit-content;
+}
+.wallet-adapter-on-mobile .wallet-adapter-button {
+  border: 1px solid #66CAC8 !important;
+}
+.wallet-adapter-on-mobile .connected-wallet-box {
+  border: 1px solid #66CAC8 !important;
+  border-radius: 30px;
+}
+
+@media (min-width: 1025px) {
+  .wallet-adapter-on-mobile {
+    display: none;
+  }
+}
+
+/*# sourceMappingURL=WalletAdapter.css.map */

@@ -1,0 +1,66 @@
+.home-page-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+}
+.home-page-container .title {
+  margin: 64px 0px;
+  color: #E3E3DD;
+  font-size: 32px;
+  font-weight: bold;
+  width: 90%;
+  max-width: 512px;
+  text-align: center;
+}
+.home-page-container .action-buttons {
+  width: 90%;
+  max-width: 632px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.home-page-container .auth-as-rider, .home-page-container .require-rider {
+  width: calc(50% - 13px);
+  height: 72px;
+  background: #A8D486;
+  color: #242A31;
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 22px;
+  font-weight: bold;
+  border-radius: 12px;
+}
+.home-page-container .rent-duck {
+  text-decoration: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 2px solid #86D2D4;
+  color: #86D2D4;
+  font-weight: bold;
+  height: 72px;
+  width: 100%;
+  border-radius: 12px;
+  margin-top: 32px;
+  background: none;
+  font-size: 22px;
+}
+
+@media (max-width: 800px) {
+  .home-page-container .title {
+    font-size: 22px;
+    line-height: 30px;
+    transition: 0.5s;
+  }
+  .home-page-container .auth-as-rider, .home-page-container .rent-duck, .home-page-container .require-rider {
+    font-size: 18px;
+    height: 64px;
+  }
+}
+
+/*# sourceMappingURL=Home.module.css.map */

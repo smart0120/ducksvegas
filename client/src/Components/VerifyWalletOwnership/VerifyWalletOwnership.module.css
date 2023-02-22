@@ -1,0 +1,77 @@
+.home-page-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+}
+
+.nft-icon {
+  border-radius: 50%;
+  width: 56px;
+  height: 56px;
+}
+
+.hr-line {
+  max-width: 416px;
+  height: 1px;
+  width: 90%;
+  background: #E5EDDF;
+  margin: 48px 0px;
+  opacity: 0.2;
+}
+
+.username {
+  font-size: 16px;
+  color: #E3E3DD;
+  font-weight: bold;
+  margin: 12px 0px;
+}
+
+.change-account {
+  color: #86D2D4;
+  font-size: 12px;
+  text-decoration: none;
+}
+
+.accounts-wrapper {
+  margin-top: 48px;
+  width: 315px;
+  justify-content: space-between;
+  display: flex;
+  align-items: flex-start;
+}
+
+.twitter-account, .phantom-account {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.wallet-address {
+  margin-top: 12px;
+  color: #E3E3DD;
+  font-weight: bold;
+}
+
+.verify-wallet-title {
+  color: #E3E3DD;
+  font-weight: bold;
+  font-size: 22px;
+  margin-bottom: 32px;
+  width: 90%;
+  text-align: center;
+}
+
+@media (max-width: 800px) {
+  .accounts-wrapper {
+    width: 285px;
+  }
+}
+@media (max-width: 500px) {
+  .verify-wallet-title {
+    line-height: 30px;
+  }
+}
+
+/*# sourceMappingURL=VerifyWalletOwnership.module.css.map */

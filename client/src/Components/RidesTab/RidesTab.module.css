@@ -1,0 +1,23 @@
+.tabs {
+  display: flex;
+  align-items: center;
+  margin-bottom: 24px;
+}
+.tabs span {
+  color: #E3E3DD;
+  font-size: 22px;
+  font-weight: bold;
+  margin-right: 32px;
+  opacity: 0.56;
+  cursor: pointer;
+}
+.tabs .active {
+  opacity: 1;
+}
+
+.rides-container {
+  width: 70%;
+  height: fit-content;
+}
+
+/*# sourceMappingURL=RidesTab.module.css.map */
