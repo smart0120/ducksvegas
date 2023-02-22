@@ -3,6 +3,7 @@ import styles from './ClientHeader.module.css';
 import logo from '../../icons/logo.svg';
 import solana from '../../icons/solana.svg'
 import axios from "axios";
+import {Link} from "react-router-dom";
 
 const RiderHeader = () => {
     const [userState, setUserState] = useState({});
@@ -19,7 +20,7 @@ const RiderHeader = () => {
 
     return (
         <header className={styles['header']}>
-            <img src={logo} alt="logo" className={styles['logo']}/>
+            <Link to="/" ><img src={logo} alt="logo" className={styles['logo']}/></Link>
             <div className={styles['header-actions']}>
                 <button className={styles['claim-button']}>Claim</button>
                 <button className={styles['rent-button']}>Rent</button>

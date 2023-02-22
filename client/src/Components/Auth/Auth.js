@@ -17,7 +17,7 @@ const Auth = () => {
     role = JSON.parse(role)
     const authorize = () => {
         window.sessionStorage.setItem("role", role.role)
-        window.location.href = `http://localhost:8080/twitter/login?role=${role.role}`
+        window.location.href = `/twitter/login?role=${role.role}`
     }
     return(
         <div className={styles['home-page-container']}>

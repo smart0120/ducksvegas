@@ -39,14 +39,14 @@ const getTwitter = (req, res) => {
           connection.query(`INSERT INTO applicants(walletId, twitterUserName, category, followersCount, balance, nfts, nbRaids, pfp, raided, twitterId, sessionId, avatar) VALUES('', '${req.user.username}', '', ${req.user._json.followers_count}, '0.00', '', 0, '', 0, '${req.user._json.id}', '${sessionId}', '${req.user._json.profile_image_url_https}')`, (err, row) => {
             connection.release();
             if(err) throw err;
-            res.redirect(`http://localhost:3000/auth/link-wallet?id=${sessionId}`);
+            res.redirect(`/auth/link-wallet?id=${sessionId}`);
           } )
         }else{
           connection.query(`UPDATE applicants SET followersCount=${req.user._json.followers_count}, sessionId='${sessionId}', avatar='${req.user._json.profile_image_url_https}' WHERE twitterUserName='${req.user.username}'`, (err, rows) => {
             connection.release();
 
             if(err) throw err;
-            res.redirect(`http://localhost:3000/auth/link-wallet?id=${sessionId}`);
+            res.redirect(`/auth/link-wallet?id=${sessionId}`);
           })
         }
       })
