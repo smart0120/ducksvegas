@@ -60,17 +60,15 @@ const LinkWallet = () => {
             axios(`https://portal-api-afa7y.ondigitalocean.app/wallet/${global.walletAddress}`)
                 .then((res) => {
                     const data = res.data;
-                    // if(data.staking.length === 0 && data.wallet.length === 0){
-                    //     setNftNotFound(true)
-                    // }else{
-                    //     window.history.replaceState({}, '','/dashboard');
-                    // }
-                    window.sessionStorage.getItem("role")
-                    debugger
-                    if(window.sessionStorage.getItem("role") === "rider"){
-                        window.location.href = '/auth/verify-ownership';
+                    if(data.staking.length === 0 && data.wallet.length === 0){
+                        setNftNotFound(true);
+                        alert("You are not ducks NFT holder")
                     }else{
-                        window.location.href = '/dashboard/client';
+                        if(window.sessionStorage.getItem("role") === "rider"){
+                            window.location.href = '/auth/verify-ownership';
+                        }else{
+                            window.location.href = '/dashboard/client';
+                        }
                     }
                 })
         }
