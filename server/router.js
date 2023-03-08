@@ -12,7 +12,7 @@ passport.use(
     {
       consumerKey: "yV34MsRaX9DRCsjVwSlNLVTsI",
       consumerSecret: "dGCVUxzE66KLxTjFIRSnqFbcjW1TV1p6WC52cqrgKpXSRp4itn",
-      callbackURL: "http://localhost:8080/twitter"
+      callbackURL: "https://raid2earn.ducksvegas.com/twitter"
     },
 
     (token, tokenSecret, profile, callback) => {
