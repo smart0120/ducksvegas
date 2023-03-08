@@ -1,0 +1,148 @@
+.raid-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 570px;
+}
+
+.author {
+  display: flex;
+  align-items: center;
+}
+.author .username {
+  color: #E3E3DD;
+  font-weight: bold;
+}
+
+.avatar {
+  border-radius: 50%;
+  margin-right: 12px;
+}
+
+.earnings {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+}
+
+.earned-title {
+  color: #E3E3DD;
+  margin-bottom: 4px;
+  font-size: 12px;
+}
+
+.earned-amount {
+  color: #A8D486;
+  font-size: 16px;
+}
+
+.progress-steps {
+  width: 570px;
+  margin-top: 40px;
+}
+.progress-steps .steps-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  width: 100%;
+}
+.progress-steps .steps-list li {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.progress-steps .steps-list li .step {
+  width: 56px;
+  height: 56px;
+  font-size: 28px;
+  color: #E3E3DD;
+  font-weight: bold;
+  background: rgba(229, 237, 223, 0.15);
+  display: flex;
+  justify-content: center;
+  border-radius: 50%;
+  align-items: center;
+}
+.progress-steps .steps-list li span {
+  margin-bottom: 12px;
+}
+.progress-steps .steps-list li p {
+  color: #E3E3DD;
+  font-size: 14px;
+  max-width: 180px;
+  text-align: center;
+}
+.progress-steps .steps-list li p .divide {
+  color: #86D2D4;
+}
+
+.close-button {
+  width: 120px;
+  height: 40px;
+  border-radius: 7px;
+  background: rgba(229, 237, 223, 0.06);
+  color: #A8D486;
+  border: none;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 25px;
+  font-size: 14px;
+}
+
+.followers-state {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.followers-state button {
+  background: #D1B944;
+  border: none;
+  border-radius: 10px;
+  padding: 15px 16px;
+  color: #242A31;
+  font-size: 14px;
+  margin-top: 32px;
+  width: 380px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.followers-state button .attention {
+  border-radius: 50%;
+  background: #242A31;
+  margin-right: 8px;
+  width: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 24px;
+  color: #D1B944;
+}
+.followers-state span {
+  position: absolute;
+  background: rgba(229, 237, 223, 0.06);
+  height: 2px;
+}
+.followers-state a, .followers-state .check-status-button {
+  width: 280px;
+  height: 48px;
+  border-radius: 10px;
+  background: #86D2D4;
+  border: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #242A31;
+  text-decoration: none;
+  font-size: 18px;
+  margin-left: 50%;
+  transform: translateX(-50%);
+  margin-top: 44px;
+}
+
+.d-none {
+  display: none;
+}
+
+/*# sourceMappingURL=RaidSteps.module.css.map */
