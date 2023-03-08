@@ -1,0 +1,22 @@
+.show-raids-container{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.tabs{
+  margin-bottom: 24px;
+  display: flex;
+  justify-content: center;
+  span{
+    margin: 0px 16px;
+    color: #E3E3DD;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: bold;
+    opacity: 0.56;
+  }
+  .active{
+    color: #E3E3DD !important;
+    opacity: 1 !important;
+  }
+}

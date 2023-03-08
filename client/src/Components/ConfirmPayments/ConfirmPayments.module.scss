@@ -1,0 +1,81 @@
+.avatar-content{
+  width: 346px;
+  padding: 24px;
+  background: rgba(#E5EDDF, 0.15);
+  border-radius: 16px;
+}
+.username{
+  color: #86D2D4;
+  width: 346px;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 11px;
+}
+.date{
+  font-size: 12px;
+  color: #E3E3DD;
+  opacity: 0.56;
+  width: 100%;
+  margin-top: 25px;
+  margin-bottom: 7px;
+}
+.describe{
+  color: #E3E3DD;
+  font-size: 14px;
+}
+.user-info{
+  width: 346px;
+}
+.user-avatar{
+  display: flex;
+  align-items: center;
+  margin-left: 16px;
+  justify-content: space-between;
+  .avatar{
+    width: 56px;
+    height: 56px;
+    border-radius: 50%;
+  }
+  .fcfs{
+    width: 87px;
+    height: 23px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #A8D486;
+    border: 1px #A8D486 solid;
+    border-radius: 6px;
+    font-size: 12px;
+    margin-right: 3px;
+  }
+  .statuses{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+  }
+}
+.payments-confirmation-text{
+  text-align: center;
+  padding: 16px 10px 24px 10px;
+  color: #E3E3DD;
+}
+.pay-button{
+  width: 346px;
+  height: 48px;
+  border-radius: 10px;
+  background: #A8D486;
+  border: none;
+  color: #242A31;
+  font-size: 18px;
+  font-weight: bold;
+}
+.close-button{
+  width: 346px;
+  height: 40px;
+  background: rgba(#E5EDDF, 0.06);
+  border-radius: 10px;
+  margin-top: 10px;
+  border: none;
+  font-size: 14px;
+  color: #A8D486;
+}

@@ -1,5 +1,6 @@
 .ride-container{
   width: 100%;
+  max-width: 973px;
   height: 96px;
   border-radius: 16px;
   background: rgba(#E5EDDF, 0.06);
@@ -16,6 +17,7 @@
 .rides-info{
   display: flex;
   align-items: center;
+  width: 150px;
 }
 .avatar-image{
   border-radius: 50%;

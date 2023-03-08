@@ -11,7 +11,11 @@
   background: #A8D486;
   border: 1px solid #A8D486;
   color: #0F1211;
+  text-decoration: none;
   font-size: 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
   font-weight: bold;
   border-radius: 10px;
 }

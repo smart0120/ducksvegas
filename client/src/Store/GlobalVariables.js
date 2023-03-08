@@ -3,7 +3,8 @@ import { createSlice } from "@reduxjs/toolkit";
 const initialGlobalVariables = {
     walletSelected: false,
     walletAddress: "",
-    role: ""
+    role: "",
+    userName: ""
 }
 
 const GlobalVariables = createSlice({
@@ -12,6 +13,9 @@ const GlobalVariables = createSlice({
     reducers: {
         setWalletSelected(state, action){
             state.walletSelected = action.payload
+        },
+        setUserName(state, action){
+            state.userName = action.payload;
         },
         setWalletAddress(state, action){
             state.walletAddress = action.payload

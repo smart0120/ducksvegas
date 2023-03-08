@@ -4,4 +4,8 @@
   justify-content: space-between;
 }
 
+.riders-container {
+  min-height: calc(100vh - 386px);
+}
+
 /*# sourceMappingURL=Rider.module.css.map */

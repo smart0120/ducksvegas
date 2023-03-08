@@ -60,15 +60,20 @@ const LinkWallet = () => {
             axios(`https://portal-api-afa7y.ondigitalocean.app/wallet/${global.walletAddress}`)
                 .then((res) => {
                     const data = res.data;
-                    if(data.staking.length === 0 && data.wallet.length === 0){
-                        setNftNotFound(true);
-                        alert("You are not ducks NFT holder")
+                    // if(data.staking.length === 0 && data.wallet.length === 0){
+                    //     setNftNotFound(true);
+                    //     alert("You are not ducks NFT holder")
+                    // }else{
+                    //     if(window.sessionStorage.getItem("role") === "rider"){
+                    //         window.location.href = '/auth/verify-ownership';
+                    //     }else{
+                    //         window.location.href = '/dashboard/client';
+                    //     }
+                    // }
+                    if(window.sessionStorage.getItem("role") === "rider"){
+                        window.location.href = '/auth/verify-ownership';
                     }else{
-                        if(window.sessionStorage.getItem("role") === "rider"){
-                            window.location.href = '/auth/verify-ownership';
-                        }else{
-                            window.location.href = '/dashboard/client';
-                        }
+                        window.location.href = '/dashboard/client';
                     }
                 })
         }
@@ -80,7 +85,7 @@ const LinkWallet = () => {
             <Link to="/"><img src={logo} alt="Logo" className={styles['logo']} /></Link>
             <img src={userData.avatar} alt="nft" className={styles['nft-icon']} />
             <p className={styles['username']}>@{userData.twitterUsername}</p>
-            <Link to="/auth" className={styles['change-account']} >Change an account</Link>
+            <Link to="/" className={styles['change-account']} >Change an account</Link>
             <div className={styles['hr-line']}></div>
             <WalletAdapter />
         </div>

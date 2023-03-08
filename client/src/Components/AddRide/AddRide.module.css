@@ -117,4 +117,14 @@
   font-weight: bold;
 }
 
+.error-message {
+  position: absolute;
+  font-size: 12px;
+  color: #EA345E;
+}
+
+.form-item-container {
+  width: calc(50% - 12px);
+}
+
 /*# sourceMappingURL=AddRide.module.css.map */

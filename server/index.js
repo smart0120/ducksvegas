@@ -27,6 +27,8 @@ app.use(api.getUserData);
 app.use(api.addRide);
 app.use(api.getRide);
 app.use(getUserData);
+app.use(api.getRidesByUserName);
+app.use(api.checkStatus);
 app.use(passport.initialize());
 app.use(passport.session());
 
