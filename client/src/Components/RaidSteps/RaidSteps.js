@@ -82,7 +82,7 @@ const RaidSteps = ({setClose, data}) => {
                     </ul>
                 </div>
                 {
-                    (parseInt(user.followersCount) > parseInt(data.minFollowers) || completed) ? (
+                    (parseInt(user.followersCount) < parseInt(data.minFollowers) || completed) ? (
                         <div className={styles['followers-state']}>
                             <span></span>
                             <button><p className={styles['attention']}>!</p> <p>{completed ? "You already completed this raid" : "You need at least {data.minFollowers} Followers to join this raid."}</p></button>
