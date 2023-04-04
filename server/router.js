@@ -1,20 +1,13 @@
 const { getFirstPage, getTwitter, getCurrentProfile } = require('./Controllers/Twitter')
 const passport = require('passport')
 const Strategy = require('passport-twitter').Strategy
-const dotenv = require('dotenv')
-
-dotenv.config()
+const config = require('../config')
 
 //bearer AAAAAAAAAAAAAAAAAAAAALN%2FkgEAAAAAmJe66%2B6af6ZyFm6rOf%2FTOO%2FQI6g%3DbMcNVZg75qj945CxSv1W82bKkZsenBYlLrMqEr1V0WIH7LZEvH
 
 passport.use(
   new Strategy(
-    {
-      consumerKey: "yV34MsRaX9DRCsjVwSlNLVTsI",
-      consumerSecret: "dGCVUxzE66KLxTjFIRSnqFbcjW1TV1p6WC52cqrgKpXSRp4itn",
-      callbackURL: "https://raid2earn.ducksvegas.com/twitter"
-    },
-
+    config.twitter,
     (token, tokenSecret, profile, callback) => {
       return callback(null, profile)
     }
@@ -37,7 +30,7 @@ passport.deserializeUser((obj, callback) => {
   }
 })
 
-const router = require('express').Router();
+const router = require('express').Router()
 
 router.get('/', getFirstPage)
 router.get('/twitter/login', passport.authenticate('twitter'), getTwitter)

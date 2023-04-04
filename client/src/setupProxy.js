@@ -1,10 +1,13 @@
 const { createProxyMiddleware } = require('http-proxy-middleware');
+const dotenv = require('dotenv')
 
-module.exports = function(app) {
+dotenv.config()
+
+module.exports = function (app) {
   app.use(
     '/api',
     createProxyMiddleware({
-      target: 'https://raid2earn.ducksvegas.com/',
+      target: process.env.SERVER_URI,
       changeOrigin: true,
     })
   );

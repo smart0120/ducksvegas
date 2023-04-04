@@ -4,13 +4,13 @@
   align-items: center;
   display: flex;
   flex-direction: column;
-  .wallet-adapter-button{
+
+  .wallet-adapter-button {
     width: 416px !important;
     border: 2px solid #A8D486 !important;
     border-radius: 12px !important;
     background: none !important;
     height: 72px;
-    margin-right: 24px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -19,16 +19,18 @@
     font-weight: bold;
   }
 }
-@media(max-width: 800px){
+
+@media(max-width: 800px) {
   .wallet-adapter-container {
-    .wallet-adapter-button{
+    .wallet-adapter-button {
       max-width: 416px !important;
       width: 90vw !important;
       height: 64px;
     }
   }
 }
-.connected-wallet-box{
+
+.connected-wallet-box {
   display: flex;
   margin-right: 24px;
   align-items: center;
@@ -39,7 +41,8 @@
   height: 48px;
   padding: 0px 21px 0px 6px;
 }
-.add-new-address-field{
+
+.add-new-address-field {
   height: 30px;
   margin-top: 30px;
   width: 350px;
@@ -52,6 +55,7 @@
   color: #8698A2;
   min-height: 46px;
 }
+
 .add-new-address-button {
   background: none;
   border: 1px #31cdc9 solid;
@@ -62,30 +66,36 @@
   height: 46px;
   margin: 30px auto 0px auto;
 }
-.wallet-adapter-input-field{
+
+.wallet-adapter-input-field {
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .add-new-address-button:hover {
   background: #31cdc9;
   color: white;
   transition: 0.7s;
 }
-.wallet-adapter-on-mobile{
+
+.wallet-adapter-on-mobile {
   margin-bottom: 48px;
   margin-top: 26px;
   width: fit-content;
-  .wallet-adapter-button{
+
+  .wallet-adapter-button {
     border: 1px solid #66CAC8 !important;
   }
-  .connected-wallet-box{
+
+  .connected-wallet-box {
     border: 1px solid #66CAC8 !important;
     border-radius: 30px;
   }
 }
-@media(min-width: 1025px){
-  .wallet-adapter-on-mobile{
+
+@media(min-width: 1025px) {
+  .wallet-adapter-on-mobile {
     display: none;
   }
 }

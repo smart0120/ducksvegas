@@ -1,16 +1,5 @@
-const pool = require("./pool");
-
-const characters ='ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
-
-function generateString(length) {
-  let result = '';
-  const charactersLength = characters.length;
-  for ( let i = 0; i < length; i++ ) {
-    result += characters.charAt(Math.floor(Math.random() * charactersLength));
-  }
-
-  return result;
-}
+const pool = require("./pool")
+const uuid = require('uuid')
 
 const getFirstPage = (req, res) => {
   try {
@@ -22,7 +11,7 @@ const getFirstPage = (req, res) => {
 
 const getTwitter = (req, res) => {
   try {
-    const sessionId = generateString(30);
+    const sessionId = uuid.v4();
     pool.getConnection((err, connection) => {
       connection.query(`SELECT * FROM applicants WHERE twitterUsername='${req.user.username}'`, (err, rows) => {
         connection.query;

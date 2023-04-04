@@ -10,8 +10,7 @@ const bodyParser = require("body-parser")
 const jsonParser = bodyParser.json();
 const urlencodedParser = bodyParser.urlencoded({ extended: false });
 const api = require('./Controllers/api')
-
-const PORT = 8080
+const config = require('../config')
 
 const app = express()
 app.use(
@@ -26,7 +25,6 @@ app.use(router);
 app.use(api.getUserData);
 app.use(api.addRide);
 app.use(api.getRide);
-app.use(getUserData);
 app.use(api.getRidesByUserName);
 app.use(api.checkStatus);
 app.use(passport.initialize());
@@ -37,6 +35,6 @@ app.use("/*", (req, res) => {
   res.sendFile(path.join(__dirname, "../client/build", "index.html"));
 });
 
-app.listen(PORT, async () => {
-  console.log(`server is up to port ${PORT}`)
+app.listen(config.PORT, async () => {
+  console.log(`server is up to port ${config.PORT}`)
 })
